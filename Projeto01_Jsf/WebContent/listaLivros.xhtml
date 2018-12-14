@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/faceLets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta charset="ISO-8859-1"></meta>
+	<title>Insert title here</title> 
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/oficial.css" />	
+</h:head>
+
+<h:body>
+	
+	<div class="container">
+		<h3>Lista de Livros</h3>
+		<div class="row aparece">	
+		
+			<div class="col-sm-12 grad">
+			
+				<div class="form-horizontal">
+				
+					<div class="form-group col-sm-12" >
+					
+						<h:form>
+						
+							<h:dataTable value="#{beanLivro.listarLivros}" var="livro" class="table table-striped">
+								
+								<h:column>
+									<f:facet name="header">ID</f:facet>
+									<h:outputText value="#{livro.id}"></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name="header">Titulo</f:facet>
+									<h:outputText value="#{livro.titulo}"></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name="header">Autor</f:facet>
+									<h:outputText value="#{livro.autor}"></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name="header">Data</f:facet>
+									<h:outputText value="#{livro.dataPublicacao}">
+										<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>	
+									</h:outputText>
+								</h:column>								
+								<h:column>
+									<f:facet name="header">Preco</f:facet>
+									<h:outputText value="#{livro.preco}">
+										<f:convertNumber type="currency"></f:convertNumber>
+									</h:outputText>
+								</h:column>								
+							
+							</h:dataTable>
+
+						</h:form>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+			
+	</div>
+	
+	<script  src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+	
+</h:body>
+
+</html>

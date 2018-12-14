@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+body{
+	
+	padding-top: 20px;
+	
+}
+
+.borda{
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.grad {
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  border: 1px solid #D8D8D8;
+  border-radius:5px;
+  width:500px;
+  background-image: linear-gradient(to right, white, #FAFAFA);
+  margin-bottom: 10px;
+}
+
+.rad {
+  border-radius:5px;
+}
+
+.aparece{
+    position: relative;
+    -webkit-animation-name: form; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: form;
+    animation-duration: 1s;	
+}
+
+.gira {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+/* Standard syntax */
+@keyframes form {
+    0%   {left:0px; top:-500px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:500px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+.spaco{
+	padding-left: 50px;
+	
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/faceLets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	
+	<title>Menu de opções</title> 
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/oficial.css" />	
+</h:head>
+<h:body>
+
+	<div class="container">
+
+		<h2>Escolha uma opção</h2>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<h:outputLink value="cadLivro.faces" class="nav-link">Cadastrar Livro</h:outputLink>
+			</li>
+			<li class="nav-item">
+				<h:outputLink value="listaLivros.faces" class="nav-link">Listar Livros</h:outputLink>
+			</li>	
+		</ul>
+	
+	</div>
+
+	<script  src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+
+</h:body>
+</html>
